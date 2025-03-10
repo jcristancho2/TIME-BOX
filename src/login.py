@@ -3,6 +3,7 @@ from tkinter import ttk, messagebox  # Widgets avanzados y mensajes emergentes
 from PIL import Image, ImageTk  # Manejo de imágenes con Pillow
 import json  # Manejo de archivos JSON para almacenar usuarios
 import os  # Interacción con el sistema operativo (verificar archivos)
+<<<<<<< HEAD
 import csv
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
@@ -12,14 +13,21 @@ import requests
 import threading
 
 
+=======
+
+# Archivo donde se guardan los usuarios
+>>>>>>> origin/feature/inicio-de-session
 DATA_FOLDER = "data"
 USUARIOS_FILE = os.path.join(DATA_FOLDER, "usuarios.json")
 CODIGO_SECRETO = "0626"  # Código para nuevos registros
 
+<<<<<<< HEAD
 API_KEY = "4239470"  # API de CallMeBot
 NUMERO_DESTINO = "573012712009"  # Número de destino en formato internacional
 MINUTOS_ANTES = 2  # Cuántos minutos antes del evento quieres recibir la notificación
 
+=======
+>>>>>>> origin/feature/inicio-de-session
 # Asegurar que la carpeta "data" exista
 if not os.path.exists(DATA_FOLDER):
     os.makedirs(DATA_FOLDER)
@@ -43,7 +51,11 @@ def login():
     usuarios = cargar_usuarios()
 
     if usuario in usuarios and usuarios[usuario] == clave:
+<<<<<<< HEAD
         root.destroy() 
+=======
+        frame_login.destroy()
+>>>>>>> origin/feature/inicio-de-session
         mostrar_pantalla_principal()
     else:
         messagebox.showerror("Error", "Usuario no encontrado. Contacte con el administrador.")
@@ -128,6 +140,7 @@ def registrar_usuario():
     ttk.Button(ventana_registro, text="Registrar", command=guardar_usuario).grid(row=3, column=0, columnspan=2, pady=10)
 
 def mostrar_pantalla_principal():
+<<<<<<< HEAD
     global root, frame_contenido, frame_menu, label_bienvenida, tema_claro
 # Archivo de la base de datos
     DB_FILE = "data/timebox.json"
@@ -707,6 +720,19 @@ def mostrar_pantalla_principal():
     mostrar_tareas_dash(frame_contenido)
     root.mainloop()
 
+=======
+    root.state("zoomed")  
+    root.configure(bg="#f4f4f4")
+
+    frame_menu = tk.Frame(root, bg="#333", width=200)
+    frame_menu.pack(side="left", fill="y")
+
+    opciones = ["Registrar tarea", "Modificar tarea", "Eliminar tarea", "Visualizar tareas", "Configuración de usuarios", "Salir"]
+
+    for opcion in opciones:
+        btn = ttk.Button(frame_menu, text=opcion, command=lambda op=opcion: manejar_opcion(op))
+        btn.pack(fill="x", padx=10, pady=5)
+>>>>>>> origin/feature/inicio-de-session
 
 def manejar_opcion(opcion):
     if opcion == "Salir":
@@ -727,9 +753,12 @@ def toggle_password():
         entry_clave.config(show="*")
         btn_toggle.config(text="👁")
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> origin/feature/inicio-de-session
 root = tk.Tk()
 root.title("Login - Gestión de Tareas")
 root.geometry("800x400")
@@ -796,4 +825,8 @@ frame_botones.columnconfigure(0, weight=1)
 frame_botones.columnconfigure(1, weight=1)
 
 
+<<<<<<< HEAD
 root.mainloop()
+=======
+root.mainloop()
+>>>>>>> origin/feature/inicio-de-session
