@@ -1,0 +1,48 @@
+{
+    "Evento": [
+        {
+            "nombre": "Preparar presentación para simposio",
+            "descripcion": "sustentacion de simposio de ingenieria",
+            "fecha_vencimiento": "2025-10-09",
+            "prioridad": "Baja",
+            "estado": "Pendiente"
+        },
+        {
+            "nombre": "Estudiar inglés (10 palabras diarias)",
+            "descripcion": "estudiar para algun dia hablar ingles",
+            "fecha_vencimiento": "2025/03/20",
+            "prioridad": "Media",
+            "estado": "Pendiente"
+        },
+        {
+            "nombre": "Configurar Arch Linux con entorno de desarrollo",
+            "descripcion": "configurar arch como hacker",
+            "fecha_vencimiento": "2025/03/20",
+            "prioridad": "Baja",
+            "estado": "Pendiente"
+        },
+        {
+            "nombre": "joder a un minion",
+            "descripcion": "llamar a molestar",
+            "fecha_vencimiento": "2025-03-09",
+            "prioridad": "Alta",
+            "estado": "Pendiente"
+        }
+    ],
+    "Task": [
+        {
+            "nombre": "revision",
+            "descripcion": "revisar codigo ",
+            "fecha_vencimiento": "2025-03-09 18:05",
+            "prioridad": "Alta",
+            "estado": "Completada"
+        },
+        {
+            "nombre": "trabajo termin",
+            "descripcion": "aplicacion terminada",
+            "fecha_vencimiento": "2025-03-09 18:04",
+            "prioridad": "Alta",
+            "estado": "En proceso"
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+Categoría,Nombre,Descripción,Fecha Vencimiento,Prioridad,Estado
+Evento,Preparar presentación para simposio,sustentacion de simposio de ingenieria,2025-10-09,Baja,Pendiente
+Evento,Estudiar inglés (10 palabras diarias),estudiar para algun dia hablar ingles,2025/03/20,Media,Pendiente
+Evento,Configurar Arch Linux con entorno de desarrollo,configurar arch como hacker,2025/03/20,Baja,Pendiente
+Evento,joder a un minion,llamar a molestar,2025-03-09,Alta,Pendiente
+Task,revision,revisar codigo ,2025-03-09 18:05,Alta,Completada
+Task,trabajo termin,aplicacion terminada,2025-03-09 18:04,Alta,En proceso
