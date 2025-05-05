@@ -19,14 +19,14 @@ TimeBox es una aplicación diseñada para la gestión eficiente de tareas, permi
 ## 📂 Estructura del Proyecto
 ```cmd
 TimeBox/
-│── src/ # Código fuente
-│ ├──
-│ ├──
-│ ├──
-│ ├──
-│── docs/ # Documentación
-│── README.md # Documentación del proyecto
-│── requirements.txt # Dependencias del proyecto
+│── data
+│ ├──timebox.json
+│ ├──usuarios.json
+│── image
+│ ├──image.png
+│── login.py
+│── README.md 
+│── requirements.txt 
 ```
 ## 📜 Uso
 
